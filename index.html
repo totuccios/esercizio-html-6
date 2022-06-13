@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport">
+    <title>html form</title>
+    <style>
+        label{
+            display: block;
+        }
+    </style> 
+</head>
+<body>
+    <form action="database.php">
+        <section>
+            <div>
+                <label for="email"> inserisci la tua email
+                    <input type="email" name="email" id="email" placeholder="email">
+                </label>
+            </div>
+            <div>
+                <label for="password"> inserisci la tua password
+                    <input type="password" name="password" id="password">
+                </label>
+            </div>
+            <div>
+                <label for="firstname"> inserisci il tuo nome
+                    <input type="text" name="firstname" id="firstname">
+                </label>
+            </div>
+            <div>
+                <label for="surname"> inserisci il tuo cognome
+                    <input type="text" name="surname" id="surname">
+
+                </label>
+            </div>
+            <div>
+                <label for="birthday"> inserisci la tua data di nascita
+                    <input type="date" name="birthday" id="birthday">
+                </label>
+            </div>
+            <div>
+                <label for="tel"> inserisci il tuo numero di telefono
+                    <input type="tel" name="telefono" id="telefono" inputmode="numeric" maxlength="11">
+                </label>
+            </div>
+            <div>
+                <label for="selector"> selezionare offerta 
+                    <select name="selector" id="selector">
+                        <option value="free plan">piano gratis</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="proplan">seleziona piano pro
+                    <input type="checkbox" name="proplan" id="proplan">
+                </label>
+            </div>
+            <div>
+                <fieldset>
+                <legend>carta di credito</legend>
+                <label for="card">inserisci numero carta
+                    <input type="tel" name="card" id="card" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx">
+                </label>
+                <label for="exp">scadenza
+                    <input type="month" name="exp" id="exp">
+                </label>
+                <label for="CVC">inserisci il CVC
+                    <input type="tel" name="CVC" id="CVC" maxlength="3" placeholder="xxx">
+                </label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="address">indirizzo di fatturazione
+                    <input type="text" name="address" id="address" placeholder="xxxxxxxxxx">
+                </label>
+            </div>
+            <div>
+                <button type="submit">invia</button>
+            </div>
+        </section>
+    </form>   
+</body>
+</html>
